@@ -1,3 +1,5 @@
+<img src="https://github.com/AperoVN/PDFZoomKit/blob/develop/PDFZoomKit/Logo.png" alt="" />
+
 # PDFZoomKit
 PDFZoomKit is a Swift framework a simple zoom tool that supports professional image enlargement
 
