@@ -2,7 +2,7 @@ import Foundation
 import AVFoundation
 import UIKit
 
-final class ZoomGestureController {
+final class ZoomGestureManager {
     
     private let pdfView: UIView?
     private let quadView: QuadrilateralView
@@ -24,7 +24,7 @@ final class ZoomGestureController {
         guard pan.state != .ended else {
             self.previousPanPosition = nil
             self.closestCorner = nil
-            quadView.resetHighlightedCornerViews()
+//            quadView.resetHighlightedCornerViews()
             return
         }
         
@@ -78,6 +78,8 @@ final class ZoomGestureController {
         }
         
         quadView.highlightCornerAtPosition(position: closestCorner, with: zoomedImage)
+        self.previousPanPosition = nil
+        self.closestCorner = nil
     }
     
     

@@ -14,7 +14,7 @@ public class ToolZoomManager {
     
 //    MARK: - Propety
     private var strokeColor: CGColor = UIColor.white.cgColor
-    private var zoomGestureController: ZoomGestureController!
+    private var zoomGestureManager: ZoomGestureManager!
     private var quadViewWidthConstraint = NSLayoutConstraint()
     private var quadViewHeightConstraint = NSLayoutConstraint()
     private var touchDown: UILongPressGestureRecognizer!
@@ -37,8 +37,8 @@ public class ToolZoomManager {
         self.strokeColor = strokeColor
         self.originFrame = originFrame
         self.mainView = mainView
-        zoomGestureController = ZoomGestureController(pdfView: viewPDF, quadView: quadView, scale: scale)
-        touchDown = UILongPressGestureRecognizer(target: zoomGestureController, action: #selector(zoomGestureController.handle(pan:)))
+        zoomGestureManager = ZoomGestureManager(pdfView: viewPDF, quadView: quadView, scale: scale)
+        touchDown = UILongPressGestureRecognizer(target: zoomGestureManager, action: #selector(zoomGestureManager.handle(pan:)))
         touchDown.isEnabled = false
         touchDown.minimumPressDuration = 0
         quadView.addGestureRecognizer(touchDown)
@@ -97,8 +97,8 @@ public class ToolZoomManager {
         
         quadView.drawQuadrilateral(quad: transformedQuad, animated: false)
         
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
-//            self.zoomGestureController.zoomLocation(location: transformedQuad.topLeft)
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.zoomGestureManager.zoomLocation(location: transformedQuad.topLeft)
+        }
     }
 }
