@@ -24,6 +24,7 @@
 		7647DFDB282CEE9D00833B3C /* QuadrilateralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCD282CEE9D00833B3C /* QuadrilateralView.swift */; };
 		7647DFDC282CEE9D00833B3C /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCE282CEE9D00833B3C /* Quadrilateral.swift */; };
 		7647DFDD282CEE9D00833B3C /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCF282CEE9D00833B3C /* CGRect+Extension.swift */; };
+		76AC9291282E481600DDB318 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AC9290282E481600DDB318 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7647DFCD282CEE9D00833B3C /* QuadrilateralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrilateralView.swift; sourceTree = "<group>"; };
 		7647DFCE282CEE9D00833B3C /* Quadrilateral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
 		7647DFCF282CEE9D00833B3C /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		76AC9290282E481600DDB318 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7647DFA9282CEE8200833B3C /* PDFZoomKit */ = {
 			isa = PBXGroup;
 			children = (
+				76AC9290282E481600DDB318 /* Logo.png */,
 				7647DFC1282CEE9C00833B3C /* Manager */,
 				7647DFC3282CEE9C00833B3C /* Resource */,
 				7647DFAA282CEE8200833B3C /* PDFZoomKit.h */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AC9291282E481600DDB318 /* Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
