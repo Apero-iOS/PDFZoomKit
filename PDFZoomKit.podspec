@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "PDFZoomKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "PDF page zoom tool"
 
   # This description is used to generate tags and improve search results.
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-  spec.resources     = "PDFZoomKit/**/*.{png,jpeg,jpg,storyboard,xib}"
+  # spec.resources     = "PDFZoomKit/**/*.{png,jpeg,jpg,storyboard,xib}"
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
