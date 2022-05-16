@@ -32,7 +32,7 @@ public class ToolZoomManager {
     }()
     
     //    MARK: - Init
-    public init(viewPDF: PDFView, mainView: UIView, originFrame: CGFloat = 100, strokeColor: CGColor = UIColor.white.cgColor, scale: CGFloat = 2) {
+    public init(viewPDF: PDFView, mainView: UIView, originFrame: CGFloat = 100, strokeColor: CGColor = UIColor.gray.cgColor, scale: CGFloat = 2) {
         self.viewPDF = viewPDF
         self.strokeColor = strokeColor
         self.originFrame = originFrame
@@ -55,6 +55,7 @@ public class ToolZoomManager {
             self.displayQuad()
         } else {
             self.quadView.removeFromSuperview()
+            self.quadView.resetHighlightedCornerViews()
         }
         self.touchDown.isEnabled = isShow
     }
@@ -97,7 +98,7 @@ public class ToolZoomManager {
         
         quadView.drawQuadrilateral(quad: transformedQuad, animated: false)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.zoomGestureManager.zoomLocation(location: transformedQuad.topLeft)
         }
     }
