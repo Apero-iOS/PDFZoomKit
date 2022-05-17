@@ -18,7 +18,7 @@
 		7647DFD5282CEE9D00833B3C /* VisionRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFC7282CEE9C00833B3C /* VisionRectangleDetector.swift */; };
 		7647DFD6282CEE9D00833B3C /* EditPhotoManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFC8282CEE9C00833B3C /* EditPhotoManager+Extension.swift */; };
 		7647DFD7282CEE9D00833B3C /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFC9282CEE9C00833B3C /* CGImagePropertyOrientation.swift */; };
-		7647DFD8282CEE9D00833B3C /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCA282CEE9D00833B3C /* ZoomGestureController.swift */; };
+		7647DFD8282CEE9D00833B3C /* ZoomGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCA282CEE9D00833B3C /* ZoomGestureManager.swift */; };
 		7647DFD9282CEE9D00833B3C /* CIRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCB282CEE9D00833B3C /* CIRectangleDetector.swift */; };
 		7647DFDA282CEE9D00833B3C /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCC282CEE9D00833B3C /* CaptureSession.swift */; };
 		7647DFDB282CEE9D00833B3C /* QuadrilateralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647DFCD282CEE9D00833B3C /* QuadrilateralView.swift */; };
@@ -50,7 +50,7 @@
 		7647DFC7282CEE9C00833B3C /* VisionRectangleDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionRectangleDetector.swift; sourceTree = "<group>"; };
 		7647DFC8282CEE9C00833B3C /* EditPhotoManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EditPhotoManager+Extension.swift"; sourceTree = "<group>"; };
 		7647DFC9282CEE9C00833B3C /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
-		7647DFCA282CEE9D00833B3C /* ZoomGestureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomGestureController.swift; sourceTree = "<group>"; };
+		7647DFCA282CEE9D00833B3C /* ZoomGestureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomGestureManager.swift; sourceTree = "<group>"; };
 		7647DFCB282CEE9D00833B3C /* CIRectangleDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIRectangleDetector.swift; sourceTree = "<group>"; };
 		7647DFCC282CEE9D00833B3C /* CaptureSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSession.swift; sourceTree = "<group>"; };
 		7647DFCD282CEE9D00833B3C /* QuadrilateralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrilateralView.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				7647DFC7282CEE9C00833B3C /* VisionRectangleDetector.swift */,
 				7647DFC8282CEE9C00833B3C /* EditPhotoManager+Extension.swift */,
 				7647DFC9282CEE9C00833B3C /* CGImagePropertyOrientation.swift */,
-				7647DFCA282CEE9D00833B3C /* ZoomGestureController.swift */,
+				7647DFCA282CEE9D00833B3C /* ZoomGestureManager.swift */,
 				7647DFCB282CEE9D00833B3C /* CIRectangleDetector.swift */,
 				7647DFCC282CEE9D00833B3C /* CaptureSession.swift */,
 				7647DFCD282CEE9D00833B3C /* QuadrilateralView.swift */,
@@ -265,7 +265,7 @@
 				7647DFDD282CEE9D00833B3C /* CGRect+Extension.swift in Sources */,
 				7647DFAC282CEE8200833B3C /* PDFZoomKit.docc in Sources */,
 				7647DFD4282CEE9D00833B3C /* UIImage+ZLImageEditor.swift in Sources */,
-				7647DFD8282CEE9D00833B3C /* ZoomGestureController.swift in Sources */,
+				7647DFD8282CEE9D00833B3C /* ZoomGestureManager.swift in Sources */,
 				7647DFD6282CEE9D00833B3C /* EditPhotoManager+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
